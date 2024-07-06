@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      body {
+        background-color: rgb(9, 11, 14);
+        padding: 0;
+        margin: 0;
+      }
+      nav{
+        width: 100%;
+        height: 70px;
+       
+        display: flex;
+        justify-content: space-around;
+      }
+      nav>div{
+        margin: auto;
+       
+        width: 35%;
+      
+      }
+      
+      .right{
+        display: flex;
+        
+        justify-content: space-around;
+        align-items: center;
+        font-size: 17px;
+      }
+      a{
+        color: white;
+        text-decoration: none;
+      }
+      button{
+        padding:10px;
+        background-color: rgb(9, 11, 14);
+        border: 1px solid rgba(116, 116, 116, 0.49);
+        color: white;
+        font-size: 17px;
+        border-radius: 10px;
+      }
+      #container{
+        align-items: center;
+        text-align: center;
+        color: white;
+        width: 80%;
+    
+        margin: auto;
+      }
+      .block{
+        margin: auto;
+        border-radius: 20px;
+       display: flex;
+        width: 400px;
+      }
+      input{
+        background-color: #000;
+        width: 70%;
+        border: none;
+       
+        border-radius: 20px;
+      }
+      .gen{
+        background-color: rgb(123,15,255);
+        width: 27%;
+        height: 80%;
+       
+        margin-top: 8px;
+      }
+      .block {
+        border-radius: 20px;
+  position: relative;
+  margin: 100px auto 0;
+  width: 600px;
+  height: 80px;
+  background: linear-gradient(0deg, #000, #272727);
+}
+.left{
+    margin-top: 20px;
+}
+.block:before, .block:after {
+    border-radius: 20px;
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(45deg, #003ffb, #0000ff, #8400ff,#6a00ff, #0059ff, #0060fb, 
+    #0000ff, #00ff00,#005eff55, #00ff8c);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.block:after {
+  filter: blur(50px);
+}
+.ai{
+    font-size: 65px;
+  background: linear-gradient(90deg, rgb(76, 58, 180) 0%, rgb(0, 12, 237) 50%, rgb(69, 115, 252) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h1{
+    font-size: 50px;
+}
+.p{
+    font-size: 25px;
+}
+.last{
+    display: flex;
+    width: 45%;
+    margin: auto;
+    justify-content: space-between;
+}
+.last>div{
+    margin-top: 20px;
+
+}
+.last>div>span{
+    background-color: #00ff00;
+}
+
+    </style>
+  </head>
+  <body>
+    <nav>
+        <div class="left">
+            <img width="170px" src="https://www.umso.com/lib_LUGoPiqXXlDptSWA/csi5g5qmp4uscbth.png" alt="">
+        </div>
+        <div class="right">
+            <a href="">Pricing</a>
+            <a href="">Features</a>
+            <a href="">Showcase</a>
+            <button>Login</button>
+            <button>Sign Up &#8594;</button>
+        </div>
+    </nav>
+
+    <div id="container">
+        <h1>Get your</h1>
+        <h1 class="ai">AI Generated Website</h1>
+        <h1>In Seconds</h1>
+        <p class="p">Give it a try right below, without having to sign up!</p>
+        <div class="block">
+            <input type="text">
+            <button class="gen">Generate</button>
+        </div>
+        <br><br><br>
+        <div class="last">
+            <p>Excellent</p>
+          
+            <div>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </div>
+
+            <p>4.8 out of 5 based on 85 reviews</p>
+            <img width="100" height="30" src="https://www.umso.com/lib_LUGoPiqXXlDptSWA/l98xzo3hmycv8co1.png?h=80&dpr=2" alt="">
+        </div>
+    </div>
+  </body>
+</html>
